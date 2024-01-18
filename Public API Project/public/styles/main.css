@@ -1,0 +1,14 @@
+body{
+    background-color: black;
+    color: wheat;
+}
+
+
+p{
+    font-size: large;
+    color: whitesmoke;
+}
+
+.card{
+    box-shadow: 10px 10px 5px 12px lightblue;
+}
