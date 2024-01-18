@@ -1,0 +1,69 @@
+<%- include('partials/header.ejs'); %>
+<%- include('partials/login.ejs'); -%>
+<div class="container">
+  <div class="row justify-content-center mt-3">
+    <div class="col-lg-8">
+      <a href="https://shaikfirdos786.github.io/Nawabs-Portfolio/" class="name text-decoration-none">Shaik Firdos</a>
+      <% if(locals.book) {%>
+      <div class="card bg-transparent mt-3" style="max-width: 100%">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="/assets/images/<%= book.img_id %>.jpg"
+              class="img-fluid rounded-start"
+              alt="..."
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title fs-1 text-warning mb-3">
+                <%= book.book_name %>
+              </h5>
+              <p class="fs-5 text-secondary">ISBN: <%= book.isbn %></p>
+              <p class="fs-5 text-secondary">Date read: <%= book.date_read.toISOString().split('T')[0] %></p>
+              <p class="card-text text-secondary my-3 fs-5">
+                How strongly I recommend it: <%= book.rating %>/10
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <% } else{ %>
+        <h2>Something went wrong</h2>
+        <% } %>
+    </div>
+  </div>
+  <div class="row justify-content-center my-5">
+    <div class="col-lg-8">
+      <hr>
+      <h2 class="text-warning">My Notes</h2>
+      <% if(locals.book && locals.notes && locals.loggedIn) {%>
+        <% notes.forEach(function(note) {%>
+          <p class="note fs-5 text-light">
+            <%= note.note %>
+          </p>
+        <% }); %>
+        <button type="button" class="btn btn-outline-success btn-sm me-5" data-bs-toggle="modal" data-bs-target="#addNotes">
+            Add Note
+        </button>
+      <a href="/deleteNote/<%= book.id %>" class="text-danger"><i class="bi bi-trash3"></i></a>
+      <% }else if(locals.book && locals.notes){%>
+        <% notes.forEach(function(note) {%>
+          <p class="note fs-5 text-light">
+            <%= note.note %>
+          </p>
+        <% }); %>
+      <% }else if(locals.loggedIn){%>
+        <h2>No Notes Written.</h2>
+        <button type="button" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#addNotes">
+            Add Notes
+        </button>
+        <% }else{ %>
+          <h2>No Notes Written.</h2>
+        <% } %>
+        <%- include('partials/addNote.ejs'); -%>
+    </div>
+  </div>
+</div>
+
+<%- include('partials/footer.ejs'); -%>

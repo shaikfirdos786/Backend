@@ -1,0 +1,38 @@
+body {
+    background-color: #e4e9fd;
+    background-image: -webkit-linear-gradient(65deg, #272927 50%, #150101 50%);
+    min-height: 1000px;
+    font-family: "helvetica neue";
+    color: wheat;
+}
+
+.name{
+    font-size: 3.5rem;
+}
+
+hr{
+    border: 2px solid gold;
+}
+
+img{
+    float: left;
+}
+
+.note{
+    font-size: 20px;
+}
+
+.social{
+    text-decoration: none;
+}
+
+.filterBooks {
+    display: flex;
+    align-items: center;
+}
+
+.filterBooks p {
+    margin: 0;
+    margin-right: 30px;
+    /* Adjust the margin as needed for spacing */
+}

@@ -1,0 +1,94 @@
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="addBook"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="addBookModal"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 text-dark" id="addBookModal">Add New Book</h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <form action="/add" method="post">
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="title" class="form-label text-dark">Title</label>
+            <input
+              type="text"
+              class="form-control"
+              id="title"
+              name="title"
+              aria-describedby="titleHelp"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="author" class="form-label text-dark">Author</label>
+            <input
+              type="text"
+              class="form-control"
+              id="author"
+              name="author"
+              aria-describedby="authorHelp"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="bookId" class="form-label text-dark">ISBN</label>
+            <input
+              type="number"
+              class="form-control"
+              id="bookId"
+              name="bookId"
+              aria-describedby="bookIdHelp"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="rating" class="form-label text-dark">Rating</label>
+            <input
+              type="number"
+              class="form-control"
+              id="rating"
+              name="rating"
+              aria-describedby="bookIdHelp"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="imgId" class="form-label text-dark">Image Id</label>
+            <input
+              type="number"
+              class="form-control"
+              id="imgId"
+              name="imgId"
+              aria-describedby="bookIdHelp"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="summary" class="form-label text-dark"
+              >Summary</label
+            >
+            <textarea id="summary" name="summary" class="form-control" rows="4" cols="50"></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            Close
+          </button>
+          <button type="submit" class="btn btn-success">ADD</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

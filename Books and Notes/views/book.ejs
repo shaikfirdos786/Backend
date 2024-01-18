@@ -1,0 +1,44 @@
+<%- include('partials/header.ejs'); %>
+<%- include('partials/login.ejs'); -%>
+<div class="container">
+  <div class="row justify-content-center my-5">
+    <div class="col-lg-8">
+      <% if(locals.books && locals.books.length > 0) {%>
+        <% books.forEach(function(book) {%>
+      <div class="card bg-transparent mb-5" style="max-width: 100%">
+        <hr />
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="assets/images/<%= book.img_id %>.jpg"
+              class="img-fluid rounded-start"
+              alt="..."
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title fs-2 text-warning mb-3">
+                <%= book.book_name %> - <%= book.author_name %>
+              </h5>
+              <p class="card-text text-secondary my-3">
+                Date read: <%= book.date_read.toISOString().split('T')[0] %>.  How strongly I recommend it: <%= book.rating %>/10
+              </p>
+              <p class="card-text fs-5 text-light mt-5">
+                <%= book.summary %>
+              </p>
+              <a href="/notes/<%= book.id %>" class="text-decoration-none fs-4 mt-5"
+                >Read my notes</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <% }); %>
+      <% }else{ %>
+        <h1>NO BOOKS FOUND</h1>
+        <% } %>
+    </div>
+  </div>
+</div>
+
+<%- include('partials/footer.ejs'); %>

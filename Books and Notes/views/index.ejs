@@ -1,0 +1,136 @@
+<%- include('partials/header.ejs'); %>
+<%- include('partials/login.ejs'); -%>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-8 py-5">
+      <a
+        href="https://shaikfirdos786.github.io/Nawabs-Portfolio/"
+        target="_blank"
+        class="name text-decoration-none"
+        >Shaik Firdos</a
+      >
+      <h1 class="my-3">Books I've READ</h1>
+      <p class="fs-4 text-light">
+        Tiny summary but
+        <span class="fw-bold">detailed notes for each.</span> Use the ISBN
+        number to find it from your local library or anywhere else.
+        <span class="fw-bold"
+          >This page will constantly update as I read more</span
+        >, so bookmark it if you want to check back in a few months.
+      </p>
+      <br />
+      <p class="fs-4 text-light">
+        Sorted with
+        <span class="fw-bold">my top recommendations up top.</span> Sort by
+        title, newest, or best.
+      </p>
+      <br />
+      <p class="fs-4 text-light">
+        If you have any questions, You can also
+        <a href="mailto:ethicalh424@gmail.com" class="text-decoration-none"
+          >email me.</a
+        >
+      </p>
+    </div>
+  </div>
+  <hr />
+  <div class="row justify-content-center my-5">
+    <div class="col-lg-8">
+      <div class="filterBooks">
+        <p class="fs-5">Filter by:</p>
+        <form action="/filter" method="post">
+          <input
+            type="radio"
+            class="btn-check"
+            name="filter"
+            id="option5"
+            value="Title"
+          />
+          <label class="btn text-danger" for="option5">Title</label>
+
+          <input
+            type="radio"
+            class="btn-check"
+            name="filter"
+            id="option6"
+            autocomplete="off"
+            value="Newest" 
+          />
+          <label class="btn text-danger ms-3" for="option6">Newest</label>
+
+          <input
+            type="radio"
+            class="btn-check"
+            name="filter"
+            id="option8"
+            autocomplete="off"
+            value="Best"
+          />
+          <label class="btn text-danger mx-3" for="option8">Best</label>
+
+          <button type="submit" class="btn btn-sm btn-outline-secondary">
+            Submit
+          </button>
+        </form>
+      </div>
+
+      <div class="searchBooks mt-3">
+        <form action="/search" method="post">
+          <div class="hstack gap-3">
+            <input
+              class="form-control me-auto"
+              type="text"
+              name="searchText"
+              placeholder="find particular book..."
+            />
+            <button type="submit" class="btn btn-secondary">Search</button>
+            <% if(locals.loggedIn) {%>
+            <div class="vr"></div>
+            <button type="button" class="btn btn-outline-success btn-sm" data-bs-toggle="modal" data-bs-target="#addBook">
+              Add Book
+            </button>
+            <% } %>
+          </div>
+        </form>
+        <%- include('partials/addBook.ejs'); -%>
+      </div>
+      <br />
+      <% if(locals.books && locals.books.length > 0) {%>
+        <% books.forEach(function(book) {%>
+      <div class="card bg-transparent mb-5" style="max-width: 100%">
+        <hr />
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="assets/images/<%= book.img_id %>.jpg"
+              class="img-fluid rounded-start"
+              alt="..."
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title fs-2 text-warning mb-3">
+                <%= book.book_name %> - <%= book.author_name %>
+              </h5>
+              <p class="card-text text-secondary my-3">
+                Date read: <%= book.date_read.toISOString().split('T')[0] %>.  How strongly I recommend it: <%= book.rating %>/10
+              </p>
+              <p class="card-text fs-5 text-light mt-5">
+                <%= book.summary %>
+              </p>
+              <a href="/notes/<%= book.id %>" class="text-decoration-none fs-4 mt-5"
+                >Read my notes</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <% }); %>
+      <% }else{ %>
+        <h1>NO BOOKS FOUND</h1>
+        <% } %>
+    </div>
+  </div>
+</div>
+
+<%- include('partials/footer.ejs'); %>

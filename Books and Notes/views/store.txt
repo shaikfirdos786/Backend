@@ -1,0 +1,176 @@
+<div class="card bg-transparent mb-5" style="max-width: 100%">
+        <hr />
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_1/v1492779471/pro_pbid_386606.jpg"
+              class="img-fluid rounded-start"
+              alt="..."
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title fs-2 text-warning mb-3">
+                PRIDE AND PREJUDICE
+              </h5>
+              <p class="card-text text-secondary my-3">
+                Date read: 2023-08-02. How strongly I recommend it: 10/10
+              </p>
+              <p class="card-text fs-5 text-light mt-5">
+                Pride and Prejudice is an 1813 novel of manners by English
+                author Jane Austen. The novel follows the character development
+                of Elizabeth Bennet, the protagonist of the book, who learns
+                about the repercussions of hasty judgments and comes to
+                appreciate the difference between superficial goodness and
+                actual goodness.
+              </p>
+              <a href="#" class="text-decoration-none fs-4 mt-5"
+                >Read my notes</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card bg-transparent mb-5" style="max-width: 100%">
+        <hr />
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/c/c2/TheGreatGatsby2013Poster.jpg"
+              class="img-fluid rounded-start"
+              alt="..."
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title fs-2 text-warning mb-3">
+                The Great Gatsby
+              </h5>
+              <p class="card-text text-secondary my-3">
+                Date read: 2023-08-02. How strongly I recommend it: 10/10
+              </p>
+              <p class="card-text fs-5 text-light mt-5">
+                The Great Gatsby is a 2013 historical romantic drama film based
+                on the 1925 novel of the same name by F. Scott Fitzgerald. The
+                film was co-written and directed by Baz Luhrmann and stars an
+                ensemble cast consisting of Leonardo DiCaprio, Tobey Maguire,
+                Carey Mulligan, Joel Edgerton, Isla Fisher, Jason Clarke Amitabh
+                Bachchan, and Elizabeth Debicki.[4] Jay-Z served as executive
+                producer. Filming took place from September to December 2011 in
+                Australia, with a $105 million net production budget. The film
+                follows the life and times of millionaire Jay Gatsby (DiCaprio)
+                and his neighbor Nick Carraway (Maguire) who recounts his
+                interactions with Gatsby amid the riotous parties of the Jazz
+                Age on Long Island in New York.
+              </p>
+              <a href="/notes" class="text-decoration-none fs-4 mt-5"
+                >Read my notes</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card bg-transparent mb-5" style="max-width: 100%">
+        <hr />
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/To_Kill_a_Mockingbird_%28first_edition_cover%29.jpg/800px-To_Kill_a_Mockingbird_%28first_edition_cover%29.jpg"
+              class="img-fluid rounded-start"
+              alt="..."
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title fs-2 text-warning mb-3">
+                To Kill a Mockingbird
+              </h5>
+              <p class="card-text text-secondary my-3">
+                Date read: 2023-08-02. How strongly I recommend it: 10/10
+              </p>
+              <p class="card-text fs-5 text-light mt-5">
+                To Kill a Mockingbird is a novel by the American author Harper
+                Lee. It was published in 1960 and was instantly successful. In
+                the United States, it is widely read in high schools and middle
+                schools. To Kill a Mockingbird has become a classic of modern
+                American literature; a year after its release, it won the
+                Pulitzer Prize. The plot and characters are loosely based on
+                Lee's observations of her family, her neighbors and an event
+                that occurred near her hometown of Monroeville, Alabama, in
+                1936, when she was ten.
+              </p>
+              <a href="#" class="text-decoration-none fs-4 mt-5"
+                >Read my notes</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card bg-transparent mb-5" style="max-width: 100%">
+        <hr />
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/8/8f/The_Book_Thief_by_Markus_Zusak_book_cover.jpg"
+              class="img-fluid rounded-start"
+              alt="..."
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title fs-2 text-warning mb-3">The Book Thief</h5>
+              <p class="card-text text-secondary mb-3">
+                Date read: 2023-08-02. How strongly I recommend it: 10/10
+              </p>
+              <p class="card-text fs-5 text-light mt-5">
+                The Book Thief is a historical fiction novel by the Australian
+                author Markus Zusak, set in Nazi Germany during World War II.
+                Published in 2006, The Book Thief became an international
+                bestseller and was translated into 63 languages and sold 17
+                million copies. It was adapted into the 2013 feature film, The
+                Book Thief. The novel follows the adventures of a young girl,
+                Liesel Meminger. Narrated by Death, the novel presents the lives
+                and viewpoints of the many victims of the ongoing war. Themes
+                throughout the story include death, literature, and love.[
+              </p>
+              <a href="#" class="text-decoration-none fs-4 mt-5"
+                >Read my notes</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card bg-transparent mb-5" style="max-width: 100%">
+        <hr />
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/a/a0/Cien_a%C3%B1os_de_soledad_%28book_cover%2C_1967%29.jpg"
+              class="img-fluid rounded-start"
+              alt="..."
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title fs-2 text-warning mb-3">
+                One Hundred Year of Solitude
+              </h5>
+              <p class="card-text text-secondary my-3">
+                Date read: 2023-08-02. How strongly I recommend it: 10/10
+              </p>
+              <p class="card-text fs-5 text-light mt-5">
+                One Hundred Years of Solitude (Spanish: Cien años de soledad,
+                Latin American Spanish: [sjen ˈaɲos ðe soleˈðað]) is a 1967
+                novel by Colombian author Gabriel García Márquez that tells the
+                multi-generational story of the Buendía family, whose patriarch,
+                José Arcadio Buendía, founded the fictitious town of Macondo.
+                The novel is often cited as one of the supreme achievements in
+                world literature.
+              </p>
+              <a href="#" class="text-decoration-none fs-4 mt-5"
+                >Read my notes</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
